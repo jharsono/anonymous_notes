@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+Anonymous Notes  </h1>
+<!-- {{note.text | json}} -->
+  <form (submit) = "addNote()">
+    <input type="text" name="note" [(ngModel)]="note.text">
+    <input type="submit" value="Submit Note" [routerLink] = '["notes"]'>
+  </form>
+</div>
+
+
+<app-notes [notes]="notes"></app-notes>
